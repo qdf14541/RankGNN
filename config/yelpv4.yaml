@@ -1,0 +1,30 @@
+# train parameters
+dataset: 'yelp'
+version: 'v4'
+seed: 20
+epoch: 2000
+early_stop: 300
+lr: 0.01
+weight_decay: 0.00005
+cuda: 0
+log: True
+data_path: './data/'
+result_path: './result/'
+
+# model parameters
+intra_dim: 8
+n_class: 2
+head: 4
+n_layer: 4
+dropout: 0.1
+ratio: 0.3
+rank_ratio: 1.2
+
+batch_size: 256
+num_workers: 0
+
+use_quant: False
+only_last: True
+quant_combine: False
+num_vars: 8
+groups: 16
